@@ -1,0 +1,19 @@
+name:                comprehension
+version:             0.1.0.0
+synopsis:            A simple benchmark for a Stack Overflow question
+description:         Please see README.md
+license:             BSD3
+license-file:        LICENSE
+category:            Web
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+executable comprehension
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , criterion
+  default-language:    Haskell2010
+
